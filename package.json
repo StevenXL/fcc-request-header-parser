@@ -1,30 +1,18 @@
 {
-  "name": "clementinejs",
-  "version": "1.0.2",
-  "description": "A light-weight MEAN stack boilerplate.",
+  "name": "fcc-request-header-parser",
+  "version": "0.0.1",
+  "description": "A small but full-stack JavaScript application for parsing a request header.",
   "main": "server.js",
   "scripts": {
-    "start": "gulp"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnstonbl01/clementinejs"
+    "url": "https://github.com/StevenXL/fcc-request-header-parser.git"
   },
-  "homepage": "http://johnstonbl01.github.io/clementinejs/",
-  "bugs": "https://github.com/johnstonbl01/clementinejs/issues",
-  "keywords": [
-    "MEAN",
-    "MongoDB",
-    "Express",
-    "Angular",
-    "Node",
-    "javascript",
-    "boilerplate"
-  ],
-  "author": "Blake Johnston",
-  "license": "MIT",
+  "homepage": "http://stevenleiva.com/",
+  "author": "Steven Leiva",
   "dependencies": {
     "express": "^4.13.3",
-    "mongodb": "^2.0.42"
   }
 }
