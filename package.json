@@ -13,6 +13,6 @@
   "homepage": "http://stevenleiva.com/",
   "author": "Steven Leiva",
   "dependencies": {
-    "express": "^4.13.3",
+    "express": "^4.13.3"
   }
 }
