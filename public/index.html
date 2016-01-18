@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-
 <html>
+  <head>
+    <title>FreeCodeCamp -  WhoAmI MicroService</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  </head>
 
-   <head>
-      <title>Clementine.js - The elegant and lightweight full-stack boilerplate.</title>
-      <link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
-      <link href="/public/css/main.css" rel="stylesheet" type="text/css">  
-   </head>
-
-   <body>
-      <div class="container">
-         <img src="/public/img/clementine_150.png" />
-         <br />
-         <p class="clementine-text">Clementine.js</p>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>API Basejump: <small>WhoAmI Microservice</small></h1>
       </div>
 
-      <div class="container">
-         <p>You have clicked the button <span id="click-nbr"></span> times.</p>   
-         <br />
-         <div class="btn-container">
-            <button type="submit" class="btn btn-add">CLICK ME!</button>
-            <button class="btn btn-delete">RESET</button>
-         </div>
-      </div>
+      <blockquote>
+        <p>This is a whoami microservice. The purpose of this microservice is
+        to return a JSON object with the <strong>ip</strong>,
+        <strong>language</strong>, and <strong>software</strong> properties.
+        These properties will reflect the relevant information from the client.
+      </blockquote>
 
-      <script type="text/javascript" src="/controllers/clickController.client.js"></script>   
-   </body>
-
+      <h2>Example Usage</h2>
+      <code>https://still-spire-9161.herokuapp.com/api/whoami</code>
+      <br />
+      <h2>Example Output</h2>
+      <code>{"ipaddress":"127.0.0.1","language":"en-US","software":"X11;
+        Ubuntu; Linux x86_64; rv:43.0"}</code>
+    </div>
+  </body>
 </html>

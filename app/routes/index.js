@@ -11,6 +11,10 @@ module.exports = function(app) {
 
       res.json(json);
     });
+
+  app.route("/").get(function(req, res) {
+    res.sendFile(process.cwd() + "/public/index.html");
+  });
 };
 
 function parseLanguage(str) {
