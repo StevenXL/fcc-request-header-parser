@@ -3,7 +3,7 @@
 module.exports = function(app) {
   app.route("/api/whoami")
     .get(function(req, res) {
-      var ip = req.ip,
+      var ip = getIp(req),
           language = parseLanguage(req.get('Accept-Language')),
           software = parseSoftware(req.get('User-Agent'));
 
@@ -29,4 +29,9 @@ function parseSoftware(str) {
   if (match) {
     return match[0].slice(1, -1);
   }
+}
+
+function getIp(req) {
+  return req.get('X-Forwarded-For') || req.get('x-forwarded-for') ||
+    req.client.remoteAddress;
 }
